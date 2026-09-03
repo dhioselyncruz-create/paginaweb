@@ -38,8 +38,8 @@ padding: 16px;
 <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
 </header>
 <main>
-<img src="imagem-blog.png"
-alt="Logotipo conceitual de tecnologia e educacao: um livro aberto de onde emerge um cérebro digital brilhante, cercado por ícones de Wi-Fi, circuitos e lâmpada de ideia. Cores em tons de azul e branco.">
+<img src="inteligencia-artificial.png"
+alt="cerebro tecnologico">
 
 <div>
 <h2>Meu primeiro post</h2>
@@ -50,9 +50,8 @@ e curiosidades da área de tecnologia.</p>
 <button>👍<span>0</span></button>
 </div>
 
-<img src="imagem-blog.png"
-alt="Logotipo conceitual de tecnologia e educacao: um livro aberto de onde emerge um cérebro digital brilhante, cercado por ícones de Wi-Fi, circuitos e lâmpada de ideia. Cores em tons de azul e branco.">
-
+<img src="inteligencia-artificial.png"gotip
+alt="cerebro tecnologico"
 <div>
 <h2>Meu primeiro post</h2>
 <p class="artigo-autor">Por: Marcelo Paludetto</p>
@@ -65,6 +64,20 @@ e curiosidades da área de tecnologia.</p>
 </body>
 <script>
 botoes.forEach(function(botao) {
+botao.addEventListener("click", botaoClicado);
+
+function botaoClicado() {
+console.log("fui clicado");
+let texto = botao.querySelector("span");
+texto.textContent++;
+}
+});
+article {
+display: flex;
+}
+botoes.forEach(function (botao) {
+let curtiu = false;
+
 botao.addEventListener("click", botaoClicado);
 
 function botaoClicado() {
